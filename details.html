@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS only -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="/style/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="/icons/css/all.css">
+  <link href="/icons/fonts/remixicon.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="/style/bootstrap.icon.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="/style/owlcarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="/style/owlcarousel/owl.theme.default.min.css">
+  <link rel="stylesheet" href="/style/aos.css">
+  <script src="/js/aos.js"></script>
+  <link rel="stylesheet" href="/style/style.css">
+
+
+
+  <title>Bandienthoai</title>
+</head>
+
+<body>
+  
+  <div class="login-modal">
+    <div class="login-box">
+      <button class="close-button">
+        <i class="ri-close-fill"></i>
+      </button>
+      <div class="style-left login-content">
+        <img src="/image/login.png" alt="">
+      </div>
+      <div class="style-right login-content">
+        <h3>Xin chào !</h3>
+        <p class="text-secondary">Tạo một tài khoản để nhận được những ưu đãi tốt nhất từ chúng tôi</p>
+        <form>
+          <div class="form-group">
+            <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Tài khoản">
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control" placeholder="Mật khẩu">
+          </div>
+          <small class="text-danger">Tài khoản hoặc mật khẩu không hợp lệ</small>
+          
+          <input type="submit" class="btn">
+          <div class="register-box">
+            <p>Bạn chưa có tài khoản ?</p>
+            <a href="#">Đăng ký ngay</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- header -->
+  <div class="header">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 logo">
+          <a href="#"><img src="/image/logo.png" alt="logo" class="logo-image">
+          </a>
+        </div>
+        <div class="col-lg-4 search-input">
+          <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
+            <button class=" my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+          </form>
+        </div>
+
+        <div class="col-lg-5 head-items">
+          <div class="item hotline-item">
+            <span class="hotline-label"><i class="ri-phone-fill"></i>
+              <p>Hotline hỗ trợ</p>
+            </span>
+            <h5>0967 123 456</h5>
+          </div>
+
+          <div class="item">
+            <button>
+              <i class="ri-shopping-cart-2-line"></i></i>
+              <span class="count-product">0</span>
+              <p>Giỏ hàng</p>
+            </button>
+          </div>
+
+          
+            <div class="dropdown item user-loged">
+              <button data-toggle="dropdown">
+                <i class="ri-user-line"></i>
+                <p>Tài khoản</p>
+              </button>
+              <div class="dropdown-menu user-button" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item user-item" href="#">Thông tin tài khoản</a>
+                <a class="dropdown-item user-item" href="#">Quản lý đơn hàng</a>
+                <a class="dropdown-item user-item" href="#">Sản phẩm yêu thích</a>
+                <a class="dropdown-item user-item" href="#">Đăng xuất</a>
+              </div>
+            </div>
+
+            <div class="dropdown item user-not-loged-in" id="login">
+              <button class="user-login" id="login">
+                <i class="ri-user-line"></i>
+                <p>Đăng nhập</p>  
+              </button>
+              
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- end header -->
+
+
+  <!-- nav-bar -->
+  <div class="narbar">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="dropdown">
+            <button class="btn-category" data-toggle="dropdown">
+              <i class="bi bi-list"></i>Danh mục tìm kiếm</button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Samsung</a>
+              <a class="dropdown-item" href="#">Iphone</a>
+              <a class="dropdown-item" href="#">Oppo</a>
+              <a class="dropdown-item" href="#">Xiaomi</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-lg-9">
+          <ul class="nav justify-content-center nav-list">
+            <li class="nav-item">
+
+              <a class="nav-link active" aria-current="page" href="#"><i class="ri-smartphone-line"></i>Điện thoại</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="ri-apple-fill"></i>IOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="ri-tablet-line"></i>Tablet</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="ri-headphone-line"></i>Phụ kiện</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="ri-newspaper-line"></i>Tin tức</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="ri-profile-line"></i>Giới thiệu</a>
+            </li>
+
+          </ul>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end-nar-bar -->
+
+  <div class="container">
+     <!-- breadcumbs -->
+
+     <nav>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+            <li class="breadcrumb-item"><a href="#">Iphone</a></li>
+            <li class="breadcrumb-item"><a href="#">OPPO Reno7 Z (8GB|128GB) Chính hãng</a></li>
+
+        </ol>
+    </nav>
+    <!-- end-breadcumbs -->
+
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="pic-produce">
+                <img src="/image/11-pro-plus-blue.jpg" alt="image product">
+                <div class="sub-image"></div>
+            </div>
+        </div>
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4"></div>
+
+    </div>
+  </div>
+
+   <!-- footer -->
+   <footer>
+    <div class="container">
+      <div class="content-footer">
+        <div class="introduce-content">
+          <h6>Về chúng tôi</h6>
+          <ul>
+            <li><a href="#" class="">Giới thiệu về chúng tôi</a></li>
+            <li><a href="#" class="">Điều khoản sử dụng</a></li>
+            <li><a href="#" class="">Chính sách chất lượng</a></li>
+            <li><a href="#" class="">Bảo mật thông tin</a></li>
+          </ul>
+        </div>
+        <div class="introduce-content">
+          <h6>Liên hệ nhanh</h6>
+          <ul>
+            <li>Địa chỉ : 828 Sư Vạn Hạnh-Q10-Tp.HCM</li>
+            <li>Hotline : <span class="quick-contact-hotline">0967 123 456</span></li>
+            <li>email : group4@gmail.com</li>
+          </ul>
+        </div>
+        <div class="introduce-content ">
+          <h6>Theo dõi chúng tôi</h6>
+          <ul class="contact-infor">
+            <li><a href="#" class=""><i class="ri-facebook-circle-fill"></i>Group4 Shop</a></li>
+            <li><a href="#" class=""><i class="ri-instagram-line"></i>group_4_inst</a></li>
+            <li><a href="#" class=""><i class="ri-youtube-line"></i>Grou4 Channel</a></li>
+            
+          </ul>
+        </div>
+        <div class="introduce-content">
+          <h6>Hỗ trợ thanh toán</h6>          
+            <a href="#" class=""><img src="/image/atm-icon.png" alt="pay-help" class="pay-help-icon"></a>
+            <a href="#" class=""><img src="/image/visa-icon1.png" alt="pay-help" class="pay-help-icon"></a> <br>
+            <a href="#" class=""><img src="/image/master-cart.png" alt="pay-help" class="pay-help-icon"></a>     
+            <a href="#" class=""><img src="/image/vnpaylogo.png" alt="pay-help" class="pay-help-icon"></a> 
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- end-footer -->
+  
+
+  <script src="/js/jquery.slim.min.js"></script>
+  <script src="/js/poper.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/owlcarousel/owl.carousel.min.js"></script>
+  <!-- <script src="/js/owlcarousel.custom.js"> </script> -->
+  <script src="/js/owlcarousel.custom.js"></script>
+  <script src="/js/jquery.custom.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="/js/main.js"></script>
+</body>
+
+</html>
