@@ -299,7 +299,7 @@ button {
     height: 31px;
     top: 7px;
     left: -4px;
-    background: url(/image/download.svg) 50% no-repeat;
+    background: url(image/download.svg) 50% no-repeat;
 }
 
 .card .sold-out-label p {
