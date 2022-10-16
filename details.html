@@ -27,7 +27,7 @@
 </head>
 
 <body>
-  
+
   <div class="login-modal">
     <div class="login-box">
       <button class="close-button">
@@ -47,8 +47,8 @@
             <input type="password" class="form-control" placeholder="Mật khẩu">
           </div>
           <small class="text-danger">Tài khoản hoặc mật khẩu không hợp lệ</small>
-          
-          <input type="submit" class="btn">
+
+          <input type="submit" class="btn" value="Đăng nhập">
           <div class="register-box">
             <p>Bạn chưa có tài khoản ?</p>
             <a href="#">Đăng ký ngay</a>
@@ -89,35 +89,35 @@
             </button>
           </div>
 
-          
-            <div class="dropdown item user-loged">
-              <button data-toggle="dropdown">
-                <i class="ri-user-line"></i>
-                <p>Tài khoản</p>
-              </button>
-              <div class="dropdown-menu user-button" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item user-item" href="#">Thông tin tài khoản</a>
-                <a class="dropdown-item user-item" href="#">Quản lý đơn hàng</a>
-                <a class="dropdown-item user-item" href="#">Sản phẩm yêu thích</a>
-                <a class="dropdown-item user-item" href="#">Đăng xuất</a>
-              </div>
-            </div>
 
-            <div class="dropdown item user-not-loged-in" id="login">
-              <button class="user-login" id="login">
-                <i class="ri-user-line"></i>
-                <p>Đăng nhập</p>  
-              </button>
-              
+          <div class="dropdown item user-loged">
+            <button data-toggle="dropdown">
+              <i class="ri-user-line"></i>
+              <p>Tài khoản</p>
+            </button>
+            <div class="dropdown-menu user-button" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item user-item" href="#">Thông tin tài khoản</a>
+              <a class="dropdown-item user-item" href="#">Quản lý đơn hàng</a>
+              <a class="dropdown-item user-item" href="#">Sản phẩm yêu thích</a>
+              <a class="dropdown-item user-item" href="#">Đăng xuất</a>
             </div>
+          </div>
+
+          <div class="dropdown item user-not-loged-in" id="login">
+            <button class="user-login" id="login">
+              <i class="ri-user-line"></i>
+              <p>Đăng nhập</p>
+            </button>
 
           </div>
 
         </div>
+
       </div>
     </div>
   </div>
-  
+  </div>
+
   <!-- end header -->
 
 
@@ -171,33 +171,373 @@
   <!-- end-nar-bar -->
 
   <div class="container">
-     <!-- breadcumbs -->
+    <!-- breadcumbs -->
 
-     <nav>
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
-            <li class="breadcrumb-item"><a href="#">Iphone</a></li>
-            <li class="breadcrumb-item"><a href="#">OPPO Reno7 Z (8GB|128GB) Chính hãng</a></li>
+    <nav>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+        <li class="breadcrumb-item"><a href="#">Iphone</a></li>
+        <li class="breadcrumb-item"><a href="#">Xiaomi Redmi Note 11 Pro 5G 128GB Chính Hãng</a></li>
 
-        </ol>
+      </ol>
     </nav>
     <!-- end-breadcumbs -->
 
-    <div class="row">
-        <div class="col-lg-4">
-            <div class="pic-produce">
-                <img src="/image/11-pro-plus-blue.jpg" alt="image product">
-                <div class="sub-image"></div>
-            </div>
-        </div>
-        <div class="col-lg-4"></div>
-        <div class="col-lg-4"></div>
+    <!-- details -->
+    <div class="row details-product">
+      <div class="col-lg-4">
+        <div class="pic-produce">
+          <img src="image/11-pro-plus-blue.jpg" alt="image product" class="main-image-detail" id="main_details-image">
+          <div class="sub-image ">
+            <img src="image/11-pro-plus-blue.jpg" alt="image-produce">
+            <img src="image/anh2.jpg" alt="image produce">
+            <img src="image/anh4.jpg" alt="image-produce">
 
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 infor-details">
+        <h3>Xiaomi Redmi Note 11 Pro 5G 128GB Chính Hãng</h3>
+        <div class="price-details">
+
+          <span class="initial-price-details">8.990.000 ₫</span>
+          <h3 class="price-details-product">7.890.000 ₫</h3>
+        </div>
+        <div class="status-product">
+          <i class="ri-map-pin-2-fill"></i>
+          Hiện đang còn hàng
+        </div>
+
+        <div class="rating-details">
+          <label>Đánh giá trung bình: </label>
+          <span class="rating">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill status-off-star"></i>
+          </span>
+        </div>
+
+        <form class="prod-options">
+
+          <div class="quantity" id="handleCounter">
+            <span style="margin-right: 20px;">Số lượng</span>
+            <button type="button" class="btn quantity-btn" id="counter-minus">-</button>
+            <input type="number" data-numspin value="1" id="quantity_product" min="1" disabled="disabled">
+            <button type="button" class="btn quantity-btn" id="counter-plus">+</button>
+          </div>
+
+
+          <button type="submit" class="add-to-cart-btn"><i class="ri-shopping-cart-2-line"></i>Thêm vào giỏ
+            hàng</button>
+          <button type="submit" class="love-product-btn"><i class="ri-heart-3-fill"></i></button>
+        </form>
+
+      </div>
+
+      <!-- right -->
+      <div class="col-lg-4 attributes-list">
+        <div class="atr-head">
+          <i class="ri-settings-3-line"></i> <span>Thông số kỹ thuật</span>
+        </div>
+        <div class="table-atrb">
+          <table class="table table-striped">
+
+            <tbody class="attributes-list-items">
+              <tr>
+                <td>Chipset</td>
+                <td>Snapdragon 695 5G</td>
+              </tr>
+              <tr>
+                <td>RAM</td>
+                <td>8 GB</td>
+              </tr>
+              <tr>
+                <td>Bộ nhớ trong</td>
+                <td>150 GB</td>
+              </tr>
+
+              <tr>
+                <td>Hệ điều hành</td>
+                <td>Android</td>
+              </tr>
+              <tr>
+
+                <td>Tốc độ CPU</td>
+                <td>2 nhân 2.2 GHz & 6 nhân 1.8 GHz</td>
+
+              <tr>
+                <td>Độ phân giải</td>
+                <td>Full HD+ (1080 x 2400 Pixels)</td>
+              </tr>
+              <tr>
+                <td>Camera sau</td>
+                <td>Chính 108 MP & Phụ 8 MP, 2 MP</td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- end right -->
     </div>
+    <!-- end-details -->
+    <div class=" row product_describe">
+      <div class="col-lg-8">
+        <p>Xiaomi Redmi Note 11 Pro 5G 128GB tại Di Động Việt là phiên bản chính hãng, mới 100% với tình trạng nguyên
+          seal máy. Nhận bảo hành 18 tháng tại hệ thống ủy quyền, đồng thời nhận nhiều ưu đãi, khuyến mãi hấp dẫn tại Di
+          Động Việt. Xiaomi Redmi Note 11 Pro 5G 128GB là chiếc điện thoại giá rẻ của Xiaomi, máy có màn hình 6.67 inch.
+          Cấu hình mạnh mẽ với chipset MediaTek Dimensity 920 5G. Ngoài ra, máy còn có cụm 3 camera với cảm biến 108MP.
+          Hỗ trợ kết nối 5G nhanh chóng, phù hợp với mọi đối tượng người dùng.</p>
+      </div>
+    </div>
+
+    <!-- related products -->
+    <div class="product-list category-product">
+      <div class="product-head">
+        <a href="#">
+          <h3>Sản phẩm liên quan</h3>
+        </a>
+        <a href="#"><span>Xem thêm</span></a>
+      </div>
+      <div class="owl-carousel">
+        <!-- product1 -->
+        <div class="element">
+          <a href="#">
+            <div class="card">
+              <img class="card-img-top" src="image/samsung1.jpg" alt="Card image cap">
+              <div class="card-body">
+                <div class="product-name">
+                  <p class="card-text">Samsung Galaxy Z Fold3 5G </p>
+                </div>
+                <h6 class="initial-price">41.990.000 ₫</h6>
+                <h5>26.990.000 ₫</h5>
+                <span class="rating">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </span>
+                <button class="love-product"><i class="ri-heart-3-fill"></i></button>
+
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- end-product1 -->
+
+        <!-- product1 -->
+        <div class="element">
+          <a href="#">
+            <div class="card">
+              <img class="card-img-top" src="image/samsung_galaxy_z_fold_4-7.jpg" alt="Card image cap">
+              <div class="card-body">
+                <div class="product-name">
+                  <p class="card-text">Samsung Galaxy Z Fold4</p>
+                </div>
+                <h6 class="initial-price">39.500.000 ₫</h6>
+                <h5>37.990.000 ₫</h5>
+                <span class="rating">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+
+                </span>
+                <button class="love-product"><i class="ri-heart-3-fill"></i></button>
+
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- end-product1 -->
+        <!-- product1 -->
+        <div class="element">
+          <a href="#">
+            <div class="card">
+              <img class="card-img-top" src="image/samsung2.jpg" alt="Card image cap">
+              <div class="card-body">
+                <div class="product-name">
+                  <p class="card-text">Samsung Galaxy S22 Ultra 5G</p>
+                </div>
+                <h6 class="initial-price">10.700.000 ₫</h6>
+
+                <h5>8.890.000 ₫</h5>
+                <div class="sold-out-label">
+                  <p>Hết hàng</p>
+                </div>
+                <span class="rating">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </span>
+                <button class="love-product"><i class="ri-heart-3-fill"></i></button>
+
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- end-product1 -->
+        <!-- product1 -->
+        <div class="element">
+          <a href="#">
+            <div class="card">
+              <img class="card-img-top" src="image/black_final_1.jpg" alt="Card image cap">
+              <div class="card-body">
+                <div class="product-name">
+                  <p class="card-text">Samsung Galaxy Note 20 Ultra 5G</p>
+
+                </div>
+                <h6 class="initial-price">32.990.000 ₫</h6>
+                <h5>18.990.000 ₫</h5>
+                <div class="sold-out-label">
+                  <p>Hết hàng</p>
+                </div>
+                <span class="rating">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </span>
+                <button class="love-product"><i class="ri-heart-3-fill"></i></button>
+
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- end-product1 -->
+
+        <!-- product1 -->
+        <div class="element">
+          <a href="#">
+            <div class="card">
+              <img class="card-img-top" src="image/samsung4.jpg" alt="Card image cap">
+              <div class="card-body">
+                <div class="product-name">
+                  <p class="card-text">Samsung Galaxy S22 (8GB - 256GB)</p>
+
+                </div>
+                <h6 class="initial-price">23.490.000 ₫</h6>
+                <h5>17.990.000 ₫</h5>
+
+                <span class="rating">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </span>
+                <button class="love-product"><i class="ri-heart-3-fill"></i></button>
+
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- end-product1 -->
+
+        <!-- product1 -->
+        <div class="element">
+          <a href="#">
+            <div class="card">
+              <img class="card-img-top" src="image/samsung-galaxy-a33-5g-500x500.jpg" alt="Card image cap">
+              <div class="card-body">
+                <div class="product-name">
+                  <p class="card-text">Samsung Galaxy A33 (5G)</p>
+
+                </div>
+                <h6 class="initial-price">8.200.000 ₫</h6>
+                <h5>6.900.000 ₫</h5>
+                <div class="sold-out-label">
+                  <p>Hết hàng</p>
+                </div>
+                <span class="rating">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </span>
+                <button class="love-product"><i class="ri-heart-3-fill"></i></button>
+
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- end-product1 -->
+      </div>
+    </div>
+    <!-- end-related products -->
+
+    <div class="rating-comment-box">
+      <h4>Đánh giá và nhận xét</h4>
+      <div class="rating-box">
+        <div class="core-rating">
+          <h2>4.1/5</h2>
+          <h5>24 đánh giá và nhận xét</h5>
+          <span class="rating">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill status-off-star"></i>
+          </span>
+        </div>
+        <div class="comment-box">
+          <form class="rating-input-group" id="rating-comment-form">
+            <div class="star-group">
+              <span class="star-rating" id="1-star"><i class="ri-star-fill"></i></span>
+              <span class="star-rating" id="2-star"><i class="ri-star-fill"></i></span>
+              <span class="star-rating" id="3-star"><i class="ri-star-fill"></i></span>
+              <span class="star-rating" id="4-star"><i class="ri-star-fill"></i></span>
+              <span class="star-rating" id="5-star"><i class="ri-star-fill"></i></span>
+            </div>
+            <textarea class="comment-text-area" name="comment" id="comment" placeholder="Nhận xét của bạn"></textarea>
+            <button type="submit" class="btn submit-comment"><i class="ri-send-plane-fill" id="send-comment"></i>Gửi</button>
+          </form>
+        </div>
+      </div>
+      <div class="comment-list">
+        <!-- comment-1 -->
+        <div class="box-cmt">
+          <div class="box-user">
+            <img src="image/user.png" alt="">
+            <p class="name-user-comment">Người dùng 1</p>
+          </div>
+          <div class="comment-text">
+            <div class="triangle"></div>
+            <p>Xinh đẹp tuyệt vời </p>
+            <small class="day-comment">10/15/2022</small>
+          </div>
+          
+        </div>
+        <!-- end-comment-1 -->
+
+        <!-- comment-1 -->
+        <div class="box-cmt">
+          <div class="box-user">
+            <img src="image/avt 2.jpeg" alt="">
+            <p class="name-user-comment">Người dùng 2</p>
+          </div>
+          <div class="comment-text">
+            <div class="triangle"></div>
+            <p> Điện thoại như cứt</p>
+            <small class="day-comment">09/15/2022</small>
+          </div>
+        </div>
+        <!-- end-comment-1 -->
+
+      </div>
+    </div>
+
   </div>
 
-   <!-- footer -->
-   <footer>
+  <!-- footer -->
+  <footer>
     <div class="container">
       <div class="content-footer">
         <div class="introduce-content">
@@ -223,21 +563,21 @@
             <li><a href="#" class=""><i class="ri-facebook-circle-fill"></i>Group4 Shop</a></li>
             <li><a href="#" class=""><i class="ri-instagram-line"></i>group_4_inst</a></li>
             <li><a href="#" class=""><i class="ri-youtube-line"></i>Grou4 Channel</a></li>
-            
+
           </ul>
         </div>
         <div class="introduce-content">
-          <h6>Hỗ trợ thanh toán</h6>          
-            <a href="#" class=""><img src="/image/atm-icon.png" alt="pay-help" class="pay-help-icon"></a>
-            <a href="#" class=""><img src="/image/visa-icon1.png" alt="pay-help" class="pay-help-icon"></a> <br>
-            <a href="#" class=""><img src="/image/master-cart.png" alt="pay-help" class="pay-help-icon"></a>     
-            <a href="#" class=""><img src="/image/vnpaylogo.png" alt="pay-help" class="pay-help-icon"></a> 
+          <h6>Hỗ trợ thanh toán</h6>
+          <a href="#" class=""><img src="/image/atm-icon.png" alt="pay-help" class="pay-help-icon"></a>
+          <a href="#" class=""><img src="/image/visa-icon1.png" alt="pay-help" class="pay-help-icon"></a> <br>
+          <a href="#" class=""><img src="/image/master-cart.png" alt="pay-help" class="pay-help-icon"></a>
+          <a href="#" class=""><img src="/image/vnpaylogo.png" alt="pay-help" class="pay-help-icon"></a>
         </div>
       </div>
     </div>
   </footer>
   <!-- end-footer -->
-  
+
 
   <script src="/js/jquery.slim.min.js"></script>
   <script src="/js/poper.min.js"></script>

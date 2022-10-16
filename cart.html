@@ -27,6 +27,7 @@
 </head>
 
 <body>
+
     <div class="login-modal">
         <div class="login-box">
             <button class="close-button">
@@ -47,7 +48,7 @@
                     </div>
                     <small class="text-danger">Tài khoản hoặc mật khẩu không hợp lệ</small>
 
-                    <input type="submit" class="btn">
+                    <input type="submit" class="btn" value="Đăng nhập">
                     <div class="register-box">
                         <p>Bạn chưa có tài khoản ?</p>
                         <a href="#">Đăng ký ngay</a>
@@ -118,8 +119,6 @@
     </div>
 
     <!-- end header -->
-
-
     <!-- nav-bar -->
     <div class="narbar">
         <div class="container">
@@ -170,219 +169,50 @@
     </div>
     <!-- end-nar-bar -->
 
-
-
-
+    <!-- cart -->
     <div class="container">
-        <!-- breadcumbs -->
-
-        <nav>
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
-                <li class="breadcrumb-item"><a href="#">Iphone</a></li>
-
-            </ol>
-        </nav>
-        <!-- end-breadcumbs -->
-
-        <!-- slider -->
-
         <div class="row">
-            <div class="col-lg-8">
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <a href="#"><img class="d-block w-100" src="/image/1.png" alt="First slide"></a>
-                        </div>
-                        <div class="carousel-item">
-                            <a href="#"><img class="d-block w-100" src="/image/2.png" alt="Second slide"></a>
-                        </div>
-                        <div class="carousel-item">
-                            <a href="#"><img class="d-block w-100" src="/image/3.png" alt="Second slide"></a>
+            <div class="col-lg-9">
+                <div class="cart">
+                    <h2>Giỏ hàng của bạn</h2>
+                    <div class="cart-title">
+                        <div class="product-cart">Sản phẩm</div>
+                        <div class="cart-fields">
+                            
                         </div>
 
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-            </div>
 
-            <div class="col-lg-4 advertise">
-                <div class="item">
-                    <a href="#"><img src="/image/ipad-vtb-360x202.jpg" alt=""></a>
-                </div>
-                <div class="item">
-                    <a href="#"><img src="/image/480.248.jpg" alt=""></a>
+                    <div class="items-cart">
+                        <div class="produce-item">
+                            <div class="product-cart">
+                                <div class="image-produce-cart">
+                                    <img src="image/11-pro-plus-blue.jpg" alt="">
+                                </div>
+                                <span>Xiaomi Redmi Note 11 Pro 5G 128GB Chính Hãng</span>
+
+                            </div>
+                            <div class="unit-price-cart element-cart">7.890.000 ₫</div>
+                            <div class="quantity-cart element-cart">Số lượng</div>
+                            <div class="price-cart element-cart">Thành tiền</div>
+                            <div class="delete-cart element-cart"><i class="ri-delete-bin-line"></i></div>
+
+                        </div>
+                    </div>
+
                 </div>
             </div>
+            <div class="col-lg-3"></div>
         </div>
-        <!-- end-slider -->
-
-        <!-- filter-box -->
-        <div class="block-filter">
-            <div class="filter-content">
-                <label class="btn">Mức giá</label>
-                <button type="button" class="btn">Dưới 4 triệu</button>
-                <button type="button" class="btn">Từ 4 triệu đến 8 triệu</button>
-                <button type="button" class="btn">Từ 8 triệu đến 11 triệu</button>
-                <button type="button" class="btn">Trên 12 triệu</button>
-            </div>
-
-            <div class="filter-content">
-                <label class="btn"> Sắp xếp theo</label>
-                <button type="button" class="btn"><i class="bi bi-sort-down-alt"></i> Giá thấp - cao</button>
-                <button type="button" class="btn"><i class="bi bi-sort-up"></i> Giá cao - thấp</button>
-
-            </div>
-        </div>
-        <!-- end-filter-box -->
-
-
-        <!-- category product -->
-        <div class="product-list category-product">
-            <div class="product-head">
-                <a href="#">
-                    <h3>Tất cả sản phẩm từ SAMSUNG của chúng tôi</h3>
-                </a>
-            </div>
-            <div class="row product-list-items">
-                <!-- product1 -->
-                <div class="element col-lg-3 col-md-4">
-                    <a href="#">
-                        <div class="card">
-                            <img class="card-img-top" src="/image/samsung1.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <div class="product-name">
-                                    <p class="card-text">Samsung Galaxy Z Fold3 5G </p>
-                                </div>
-                                <h6 class="initial-price">41.990.000 ₫</h6>
-                                <h5>26.990.000 ₫</h5>
-                                <span class="rating">
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                </span>
-                                <button class="love-product"><i class="ri-heart-3-fill"></i></button>
-
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- end-product1 -->
-                <!-- product1 -->
-                <div class="element col-lg-3 col-md-4">
-                    <a href="#">
-                        <div class="card">
-                            <img class="card-img-top" src="/image/samsung1.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <div class="product-name">
-                                    <p class="card-text">Samsung Galaxy Z Fold3 5G </p>
-                                </div>
-                                <h6 class="initial-price">41.990.000 ₫</h6>
-                                <h5>26.990.000 ₫</h5>
-                                <span class="rating">
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                </span>
-                                <button class="love-product"><i class="ri-heart-3-fill"></i></button>
-
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- end-product1 -->
-                <!-- product1 -->
-                <div class="element col-lg-3 col-md-4">
-                    <a href="#">
-                        <div class="card">
-                            <img class="card-img-top" src="/image/samsung1.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <div class="product-name">
-                                    <p class="card-text">Samsung Galaxy Z Fold3 5G </p>
-                                </div>
-                                <h6 class="initial-price">41.990.000 ₫</h6>
-                                <h5>26.990.000 ₫</h5>
-                                <span class="rating">
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                </span>
-                                <button class="love-product"><i class="ri-heart-3-fill"></i></button>
-
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- end-product1 --><!-- product1 -->
-                <div class="element col-lg-3 col-md-4">
-                    <a href="#">
-                        <div class="card">
-                            <img class="card-img-top" src="/image/samsung1.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <div class="product-name">
-                                    <p class="card-text">Samsung Galaxy Z Fold3 5G </p>
-                                </div>
-                                <h6 class="initial-price">41.990.000 ₫</h6>
-                                <h5>26.990.000 ₫</h5>
-                                <span class="rating">
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                </span>
-                                <button class="love-product"><i class="ri-heart-3-fill"></i></button>
-
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- end-product1 --><!-- product1 -->
-                <div class="element col-lg-3 col-md-4">
-                    <a href="#">
-                        <div class="card">
-                            <img class="card-img-top" src="/image/samsung1.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <div class="product-name">
-                                    <p class="card-text">Samsung Galaxy Z Fold3 5G </p>
-                                </div>
-                                <h6 class="initial-price">41.990.000 ₫</h6>
-                                <h5>26.990.000 ₫</h5>
-                                <span class="rating">
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                </span>
-                                <button class="love-product"><i class="ri-heart-3-fill"></i></button>
-
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- end-product1 -->
-         
-                
-            </div>
-
-        </div>
-
-        
     </div>
+    <!-- end-cart -->
+
+
+
+
+
+
+
     <footer>
         <div class="container">
             <div class="content-footer">
@@ -415,8 +245,7 @@
                 <div class="introduce-content">
                     <h6>Hỗ trợ thanh toán</h6>
                     <a href="#" class=""><img src="/image/atm-icon.png" alt="pay-help" class="pay-help-icon"></a>
-                    <a href="#" class=""><img src="/image/visa-icon1.png" alt="pay-help" class="pay-help-icon"></a>
-                    <br>
+                    <a href="#" class=""><img src="/image/visa-icon1.png" alt="pay-help" class="pay-help-icon"></a> <br>
                     <a href="#" class=""><img src="/image/master-cart.png" alt="pay-help" class="pay-help-icon"></a>
                     <a href="#" class=""><img src="/image/vnpaylogo.png" alt="pay-help" class="pay-help-icon"></a>
                 </div>
@@ -424,6 +253,7 @@
         </div>
     </footer>
     <!-- end-footer -->
+
 
     <script src="/js/jquery.slim.min.js"></script>
     <script src="/js/poper.min.js"></script>

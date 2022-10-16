@@ -6,22 +6,25 @@ for (let item in intial_price) {
         intial_price[item].style.textDecoration = "none";
     }
 };
+var quantity_product = Number(document.getElementById("quantity_product").value);   
 
-// const modal = document.querySelector('.login-modal');
-// const modalContainer = document.querySelector('.login-box');
-// console.log(modal)
-// var login_btn = document.getElementById('login');
-//     login_btn.onclick = function () {
-//       modal.classList.add('open-login')
-//     };
 
-//     modal.onclick = function(){
-//         modal.classList.remove('open-login');
-//     }
+document.getElementById("counter-minus").onclick = function(){
+    // var quantity_product = Number(document.getElementById("quantity_product").value);    
+    if(Number(document.getElementById("quantity_product").value) < 2){
+        document.getElementById("quantity_product").value = '1';
+    }
+    else{
+        quantity_product -=1;
+    document.getElementById("quantity_product").value = quantity_product
+    }
+}
 
-//     modalContainer.onclick = function(even){ 
-//         even.stopPropagation();
-//        }
+document.getElementById("counter-plus").onclick = function(){
+
+    quantity_product +=1;
+    document.getElementById("quantity_product").value = quantity_product
+}
 
 
 
