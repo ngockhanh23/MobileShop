@@ -18,12 +18,12 @@ $(document).ready(function () {
           margin:62
         },
         600:{
-            items:2,
-            margin:50
+            items:3,
+            margin:60
         },
         1024:{
           items:4,
-          margin:85     
+          margin:80     
 
         }
     }

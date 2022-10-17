@@ -28,6 +28,8 @@ document.getElementById("counter-plus").onclick = function(){
 
 
 
+
+
 var name_product = document.getElementsByClassName("card-text");
 for (let item in name_product) {
     if (name_product[item].innerHTML.length > 36)

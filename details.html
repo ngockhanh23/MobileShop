@@ -17,8 +17,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   <link rel="stylesheet" href="/style/owlcarousel/owl.carousel.min.css">
   <link rel="stylesheet" href="/style/owlcarousel/owl.theme.default.min.css">
-  <link rel="stylesheet" href="/style/aos.css">
-  <script src="/js/aos.js"></script>
   <link rel="stylesheet" href="/style/style.css">
 
 
@@ -63,7 +61,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-3 logo">
-          <a href="#"><img src="/image/logo.png" alt="logo" class="logo-image">
+          <a href="index.html"><img src="image/logo.png" alt="logo" class="logo-image">
           </a>
         </div>
         <div class="col-lg-4 search-input">
@@ -81,12 +79,12 @@
             <h5>0967 123 456</h5>
           </div>
 
-          <div class="item">
-            <button>
+          <div class="item cart-btn">
+            <a href="cart.html">
               <i class="ri-shopping-cart-2-line"></i></i>
-              <span class="count-product">0</span>
+              <span class="count-product">2</span>
               <p>Giỏ hàng</p>
-            </button>
+            </a>
           </div>
 
 
@@ -103,11 +101,11 @@
             </div>
           </div>
 
-          <div class="dropdown item user-not-loged-in" id="login">
-            <button class="user-login" id="login">
+          <div class="item user-not-loged-in" id="login">
+            <a class="user-login" id="login">
               <i class="ri-user-line"></i>
               <p>Đăng nhập</p>
-            </button>
+            </a>
 
           </div>
 
@@ -115,7 +113,7 @@
 
       </div>
     </div>
-  </div>
+
   </div>
 
   <!-- end header -->
@@ -497,7 +495,8 @@
               <span class="star-rating" id="5-star"><i class="ri-star-fill"></i></span>
             </div>
             <textarea class="comment-text-area" name="comment" id="comment" placeholder="Nhận xét của bạn"></textarea>
-            <button type="submit" class="btn submit-comment"><i class="ri-send-plane-fill" id="send-comment"></i>Gửi</button>
+            <button type="submit" class="btn submit-comment"><i class="ri-send-plane-fill"
+                id="send-comment"></i>Gửi</button>
           </form>
         </div>
       </div>
@@ -513,7 +512,7 @@
             <p>Xinh đẹp tuyệt vời </p>
             <small class="day-comment">10/15/2022</small>
           </div>
-          
+
         </div>
         <!-- end-comment-1 -->
 
@@ -587,9 +586,7 @@
   <!-- <script src="/js/owlcarousel.custom.js"> </script> -->
   <script src="/js/owlcarousel.custom.js"></script>
   <script src="/js/jquery.custom.js"></script>
-  <script>
-    AOS.init();
-  </script>
+  
   <script src="/js/main.js"></script>
 </body>
 

@@ -1,5 +1,5 @@
 :root {
-    --main-color: rgb(0, 89, 141);
+    --main-color: rgb(1, 70, 134);
 }
 
 body {
@@ -89,6 +89,21 @@ button {
     padding: 11px 10px;
     text-align: center;
     position: relative;
+    
+}
+
+.head-items .item a{
+    color: #fff;
+    text-decoration: none;    
+    font-size: 14px;
+    position: relative;
+    top: 10px;
+}
+.head-items .item a i{
+    font-size: 24px;
+}
+.head-items .item a:hover{
+    cursor: pointer;
 }
 
 /* .head-items .item .cart-icon{
@@ -97,7 +112,7 @@ button {
 
 
 
-.head-items .item button .count-product {
+.head-items .item a .count-product {
 
     color: rgb(36, 36, 36);
     background: rgb(253, 216, 53);
@@ -120,13 +135,10 @@ button {
     display: none;
 }
 
-.head-items .item button {
-    border: none;
-    background: none;
-    color: white;
-}
+/* .head-items .item a{
+} */
 
-.head-items .item button:hover {
+.head-items .item .cart-btn:hover {
     cursor: pointer;
 }
 
@@ -290,10 +302,11 @@ button {
 .card {
     width: 236px;
     position: relative;
-    border: none;
+    border: 1px solid rgb(228, 228, 228);
     border-radius: 15px;
     background-color: white;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    box-shadow: rgba(71, 71, 71, 0.2) 0px 2px 8px 0px;
+    /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
     transition: 0.6s;
     left: 12px;
 }
@@ -302,9 +315,20 @@ button {
     width: 80px;
     position: absolute;
     height: 31px;
-    top: 7px;
+    top: -5px;
     left: -4px;
-    background: url(/image/download.svg) 50% no-repeat;
+    /* background: url(/image/download.svg) fixed no-repeat; */
+}
+
+.card .sold-out-label img{
+    position: absolute;
+    left: -1px;
+}
+
+.card .sold-out-label p{
+    position: absolute;
+    z-index: 2;
+    top: 18px;
 }
 
 .card .sold-out-label p {
@@ -907,56 +931,99 @@ input[type=number]::-webkit-outer-spin-button {
     top: -6px;
 }
 
-.cart{
-    margin: 20px auto;
-    padding: 20px;
-}
-.img-cart-prod{
-    width: 15px;
-}
-.img-cart-prod img{
+
+.cart-infor{
     width: 100%;
+    border-collapse:separate;
+    border-spacing:0 20px;
 }
 
-.cart-title{
-    display: flex;
-    align-items: center ;
-    border-radius: 5px;
-    border:  1px solid rgb(238, 238, 238);
-    padding: 5px 10px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+.cart-title {
+    border: 1px solid rgb(206, 206, 206);
+
+    border-radius: 10%;
+}
+.cart-title th{
+    padding: 10px;
+    font-weight:unset;
 }
 
-.produce-item{
+
+.product-infor-cart img{
+    width: 60px;
+}
+
+
+.cart-item td .product-infor-cart{
     display: flex;
-    align-items: center ;
-    border-radius: 5px;
-    border:  1px solid rgb(238, 238, 238);
-    padding: 12px 10px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    align-items: center;
+    width: 253px;
+}
+.cart-item td .product-infor-cart .name-product-cart{
+    margin-left: 30px;
+}
+
+.unit-price-cart{
+    color: var(--main-color);
+}
+
+.quantity-btn-cart{
+    height: 20px;
+    display: flex;
+    align-items: center;
+    width: 20px;
+    justify-content: center;
+}
+.quantity-cart input{
+    height: 20px;
+    width: 30px;
+}
+
+.quantity-btn-cart:hover{background-color: gray; cursor: pointer;}
+.into-money-cart{color: var(--main-color); }
+.delete-product-cart{
+    border: none;
+    color: rgb(112, 0, 0);
+    background: none;
+    font-size: 22px;
+}
+.update-product-btn{
+    border: none;
+    background: none;
+    font-size: 22px;
+}
+.update-product-btn:hover{
+    cursor: pointer;
+    color: var(--main-color);
+}
+.delete-product-cart:hover{
+    color: rgb(82, 0, 0);
+    cursor: pointer;
+}
+.right-cart-element{
+    border: 1px solid rgb(224, 224, 224);
+    margin-top: 17px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.total-price-cart{
+    float: right;
+    font-weight: bold;
+    font-size: large;
+    color: var(--main-color);
+}
+.right-cart-element div{
+    margin: 14px auto;
+}
+.form-order{
     margin: 20px auto;
 }
-.produce-item .product-cart{
-    display: flex;
-    width: 40%;
-}
 
-.cart-title .product-cart{
-    width: 40%;
-}
-.element-cart{
-    width: 15%;
-}
-
-.image-produce-cart{
-    width: 43%;
-    height: 80px;
-}
-.image-produce-cart img{
+.order-button{
     width: 100%;
-    height: 100%;
+    background-color: var(--main-color);
+    color: #fff;
 }
-
 
 @keyframes animatetop {
     from {
@@ -1021,6 +1088,10 @@ input[type=number]::-webkit-outer-spin-button {
 
     .login-box .style-left {
         display: none;
+    }
+
+    .cart-items .cart-fields span{
+        margin: 5px;
     }
 
 }
